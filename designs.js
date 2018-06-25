@@ -22,7 +22,7 @@ $('#sizePicker').submit(function(e) {
 
 
 	for(j=1; y>j; y--){
-		$('tr').append('<td class="color-canvas"></td></tr>');
+		$('tr').append('<td></td></tr>');
 	} 	
 
 
@@ -36,14 +36,19 @@ $(document).ready(function(){
 	$('table').on('click', 'td', function() {
 
 	pixelColor = $('#colorPicker').val();
-	$(this).css('background', pixelColor);
+
+		if($(this).attr('style')){
+            $(this).removeAttr('style');
+        }
+        
+        else {
+            $(this).attr('style', 'background:' + pixelColor);
+        };
 	});	
+
 	})
 
 	});
 
 // call makeGrid() function
 makeGrid();
-
-
-	
