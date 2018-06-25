@@ -4,9 +4,11 @@ body {
 }
 
 h1 {
-    font-family: Monoton;
+    font-family: 'Cabin Sketch', cursive;
     font-size: 70px;
     margin: 0.2em;
+    color: rgb(255,0,128);
+    text-shadow: 2px 2px 4px #000000;
 }
 
 h2 {
@@ -20,12 +22,15 @@ h2:first-of-type {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 3px solid black;
+
 }
 
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    margin-bottom: 10px;
+
 }
 
 tr {
@@ -45,8 +50,11 @@ input[type=number] {
     color: #FF8000;
 }
 
-.container{
+
+.container {
     background: #fff;
     margin: 50px;
     border-radius: 15px;
+    box-shadow: 1px 5px 25px rgba(2, 3, 3, 6);
+
 }
